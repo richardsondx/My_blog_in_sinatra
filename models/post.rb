@@ -2,10 +2,10 @@ class Post < Sequel::Model
   
   set_schema do
     primary_key :id
-    varchar :title
-    varchar :text
+    String :title
+    String :text
     datetime :date
-    varchar :link
+    String :link
   end
   
   unless table_exists?
