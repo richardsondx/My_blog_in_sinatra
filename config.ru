@@ -1,2 +1,2 @@
-require './wind'
+require './app'
 run Sinatra::Application
