@@ -1,4 +1,4 @@
 source 'http://rubygems.org'
 gem 'sinatra'
 gem "sequel"
-gem 'sinatra-sequel'
+gem 'pg'
