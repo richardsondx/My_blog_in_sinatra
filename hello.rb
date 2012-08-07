@@ -1,5 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World!"
+  @posts = Post.ordered
+  @next_page = next_page
+  erb :index
 end
