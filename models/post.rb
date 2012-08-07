@@ -7,7 +7,7 @@ class Post < Sequel::Model
     datetime :date
     String :link
 
-    primary_key :id
+    set_primary_key :id
   end
   
   unless table_exists?
