@@ -1,6 +1,6 @@
 <% @posts.each do |post| %>
-    <article>
-            <h1>
+    <article id="postwrap">
+            <h1 id="posttitle">
                 <a href="/<%= post.link %>"><%= post.title %></a>
                 <%= edit_link 'post', post.id %>
             </h1>

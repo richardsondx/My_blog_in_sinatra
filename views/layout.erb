@@ -15,9 +15,19 @@
     </head>
     <body>
         <div id="content">
-            <header>
-                <h1><a href="/"><%= $settings.name %></a></h1>
-                <h2><%= $settings.title %></h2>
+            <header id="blogheader">
+                <h1 id="blogname"><a href="/"> Richardson Dx's Blog: <%= $settings.name %></a></h1>
+                <h2 id="blogtitle"><%= $settings.title %></h2>
+                <div id="demo-container">
+                    <ul id="simple-menu">
+                      <li>
+                        <a class="current" title="Home" href="http://blog.richdx.com">Blog</a>
+                      </li>
+                      <li>
+                        <a title="Home" href="http://www.richdx.com">Go Back to www.richdx.com</a>
+                      </li>
+                    </ul>
+                </div>
             </header>
             <% if @message %>
                 <section id="message"><%= @message %></section>

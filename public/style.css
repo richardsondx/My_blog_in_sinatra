@@ -1,5 +1,7 @@
 * { margin: 0; padding: 0; font-size: 1em; list-style-position: inside; }
-
+body{
+  background: url("http://subtlepatterns.com/patterns/foggy_birds.png");
+}
 #content {
   width: 800px;
   margin: 0 auto;
@@ -141,3 +143,57 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+/* Personal Customamization by Richardson Dackam */
+
+#blogheader{
+
+}
+#blogname{
+  background: url("http://subtlepatterns.com/patterns/pool_table.png");
+  margin-top: 10px;
+  padding: 30px 0 10px 0px;
+  border-top: black 5px solid;
+
+}
+
+#blogname a{
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  font-size: 1.6em;
+  padding-bottom: 40px;
+}
+
+#blogtitle{
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: #D6D6D6 3px solid;
+  font-size: 1.3em;
+}
+#postwrap{
+  background: white;
+  border: black 1px solid;
+  padding: 10px;
+}
+#posttitle{
+  background: #BCBCBC;
+  padding: 4px;
+  margin: 4px;  
+  font-size: 1.1em;
+}
+#posttitle a{
+  text-decoration: none;
+  color: #272822;
+}
+
+#demo-container{padding:25px 15px 0 15px; background:#ba2d2d; margin-top: 10px;}
+ul#simple-menu{list-style-type:none;width:100%;position:relative;height:27px;font-family:"Trebuchet MS",Arial,sans-serif;font-size:13px;font-weight:bold;margin:0;padding:11px 0 0 0;}
+ul#simple-menu li{display:block;float:left;margin:0 0 0 4px;height:27px;}
+ul#simple-menu li.left{margin:0;}
+ul#simple-menu li a{display:block;float:left;color:#fff;background:#24613E;line-height:27px;text-decoration:none;padding:0 17px 0 18px;height:27px;}
+ul#simple-menu li a.right{padding-right:19px;}
+ul#simple-menu li a:hover{background:#2E4560;}
+ul#simple-menu li a.current{color:#2E4560;background:#fff;}
+ul#simple-menu li a.current:hover{color:#2E4560;background:#fff;}

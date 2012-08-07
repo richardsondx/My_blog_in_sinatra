@@ -13,8 +13,8 @@ class Setting < Sequel::Model
   unless table_exists?
     create_table
     create(
-      :name => 'Wind',
-      :title => 'A simple way to think',
+      :name => 'Railsstep',
+      :title => "It's a small step for a man, a big step for hummanity",
       :code => 'admin'
     )
   end
