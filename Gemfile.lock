@@ -23,7 +23,6 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.9)
-    sequel (3.38.0)
     sinatra (1.3.2)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
@@ -38,6 +37,5 @@ DEPENDENCIES
   RedCloth
   heroku
   pg
-  sequel
   sinatra
   sqlite3
