@@ -1,2 +1,8 @@
-require './app	'
-run Wind::Application	
+require 'rubygems'
+require 'bundler'
+
+Bundler.require
+
+require './app'
+
+run MyApp
