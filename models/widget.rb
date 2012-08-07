@@ -2,8 +2,8 @@ class Widget < Sequel::Model
   
   set_schema do
     primary_key :id
-    String :title
-    String :content
+    varchar :title
+    varchar :content
     integer :order
     boolean :admin
   end
