@@ -1,9 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 
-class App < Sinatra::Base
-
-run! if app_file == $0
+get '/' do
 
 unless Kernel.respond_to?(:require_relative)
   module Kernel
