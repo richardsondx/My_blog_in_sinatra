@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    RedCloth (4.2.9)
     pg (0.14.0)
     rack (1.4.1)
     rack-protection (1.2.0)
@@ -16,6 +17,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  RedCloth
   pg
   sequel
   sinatra
