@@ -1,13 +1,14 @@
 class Post < Sequel::Model
   
+
+  Sequel::Model.plugin(:schema)  
+
   set_schema do
-    integer :id
+    set_primary_key :id
     String :title
     String :text
     datetime :date
     String :link
-
-    set_primary_key :id
   end
   
   unless table_exists?
