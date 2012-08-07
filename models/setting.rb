@@ -2,12 +2,12 @@ class Setting < Sequel::Model
   
   set_schema do
     primary_key :id
-    String :name
-    String :title
-    String :code
-    String :feed
-    String :footer
-    String :tracker
+    varchar :name
+    varchar :title
+    varchar :code
+    varchar :feed
+    varchar :footer
+    varchar :tracker
   end
   
   unless table_exists?

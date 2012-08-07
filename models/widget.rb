@@ -2,10 +2,10 @@ class Widget < Sequel::Model
   
   set_schema do
     primary_key :id
-    String :title
-    String :content
-    Integer :order
-    Boolean :admin
+    varchar :title
+    varchar :content
+    integer :order
+    boolean :admin
   end
   
   unless table_exists?
