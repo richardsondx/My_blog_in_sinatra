@@ -12,8 +12,8 @@ end
 require_relative 'config'
 require_relative 'routes'
 
-class MyApp < Sinatra::Base
-  get '/' do
-    'Hello world!'
-  end
-end
+# class MyApp < Sinatra::Base
+#   get '/' do
+#     'Hello world!'
+#   end
+# end
