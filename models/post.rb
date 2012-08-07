@@ -4,12 +4,23 @@ class Post < Sequel::Model
     primary_key :id
     varchar :title
     varchar :text
-    varchar :date
+    datetime :date
     varchar :link
   end
   
   unless table_exists?
-    create_table
+    Sequel.migration do
+    up do
+    create_table do
+      primary_key :id
+      String :title
+      String :text
+      DateTime :date
+      String :link
+    end
+    end
+    end
+
     create(
       :title => 'Welcome!',
       :text => File.open('README.textile', 'r') { |file| file.read },
