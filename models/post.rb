@@ -4,7 +4,7 @@ class Post < Sequel::Model
     primary_key :id
     varchar :title
     varchar :text
-    datetime :date
+    varchar :date
     varchar :link
   end
   

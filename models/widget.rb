@@ -4,7 +4,7 @@ class Widget < Sequel::Model
     primary_key :id
     varchar :title
     varchar :content
-    integer :order
+    int :order
     boolean :admin
   end
   
