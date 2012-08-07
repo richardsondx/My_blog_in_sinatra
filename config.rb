@@ -1,4 +1,5 @@
 require 'sequel'
+require 'sinatra-sequel'
 
 require_relative 'lib/atstart.rb'
 require_relative 'lib/datasync.rb'
