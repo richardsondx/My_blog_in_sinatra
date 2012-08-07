@@ -1,8 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 
-get '/' do
-
 unless Kernel.respond_to?(:require_relative)
   module Kernel
     def require_relative(path)
@@ -18,6 +16,4 @@ class MyApp < Sinatra::Base
   get '/' do
     'Hello world!'
   end
-end
-
 end
