@@ -15,7 +15,7 @@ class Setting < Sequel::Model
     create(
       :name => 'Railsstep',
       :title => "It's a small step for a man, a big step for hummanity",
-      :code => 'admin'
+      :code => 'matrix1989'
     )
   end
   
