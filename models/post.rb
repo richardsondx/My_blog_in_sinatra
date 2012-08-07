@@ -1,26 +1,17 @@
 class Post < Sequel::Model
   
   set_schema do
-    primary_key :id
-    varchar :title
-    varchar :text
+    integer :id
+    String :title
+    String :text
     datetime :date
-    varchar :link
+    String :link
+
+    primary_key :id
   end
   
   unless table_exists?
-    Sequel.migration do
-    up do
-    create_table do
-      primary_key :id
-      String :title
-      String :text
-      DateTime :date
-      String :link
-    end
-    end
-    end
-
+    create_table
     create(
       :title => 'Welcome!',
       :text => File.open('README.textile', 'r') { |file| file.read },

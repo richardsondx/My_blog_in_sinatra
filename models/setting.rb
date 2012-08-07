@@ -9,7 +9,7 @@ class Setting < Sequel::Model
     varchar :footer
     varchar :tracker
   end
-  
+
   unless table_exists?
     create_table
     create(
