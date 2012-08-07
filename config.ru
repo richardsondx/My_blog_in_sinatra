@@ -1,2 +1,2 @@
-require './wind'
+require 'app.rb'
 run Sinatra::Application
