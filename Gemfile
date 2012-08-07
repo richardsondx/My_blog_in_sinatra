@@ -1,3 +1,6 @@
 source 'http://rubygems.org'
 gem 'heroku'
 gem 'sinatra'
+gem 'RedCloth'
+gem 'sequel'
+gem 'sequel/extensions/pagination'
