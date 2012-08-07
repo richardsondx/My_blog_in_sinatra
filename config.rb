@@ -9,7 +9,8 @@ require_relative 'lib/extend_string.rb'
 Dir['plugins/*.rb'].each { |plugin| require_relative plugin }  
 
 # Database connection.
-DB = Sequel.connect 'sqlite://wind.db'
+# DB = Sequel.connect 'sqlite://wind.db'
+DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost/wind.db')
 
 # Sequel schema plugin.
 Sequel::Model.plugin :schema
