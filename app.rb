@@ -1,6 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 
+get '/' do
+    "Hello"
+end
+
 unless Kernel.respond_to?(:require_relative)
   module Kernel
     def require_relative(path)
