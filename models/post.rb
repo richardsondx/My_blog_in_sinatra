@@ -10,10 +10,10 @@ class Post < Sequel::Model
   unless table_exists? 
     DB.create_table :posts do
       primary_key :id
-      String :title
-      String :text
+      varchar :title
+      varchar :text
       Datetime :date
-      String :link
+      varchar :link
     end
   end
 
