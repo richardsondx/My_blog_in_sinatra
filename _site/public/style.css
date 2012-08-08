@@ -1,0 +1,199 @@
+* { margin: 0; padding: 0; font-size: 1em; list-style-position: inside; }
+body{
+  background: url("http://subtlepatterns.com/patterns/foggy_birds.png");
+}
+#content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  float: left;
+  width: 800px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 22pt;
+}
+
+header h2 {
+  font-size: 12pt;
+}
+
+#main {
+  float: left;
+  width: 530px;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+article h1 {
+  font-size: 16pt;
+  margin-bottom: 0;
+}
+
+article section {
+  margin-top: 20px;
+}
+
+article h2 {
+  font-size: 14pt;
+  margin: 30px 0 15px;
+}
+
+article h3, article h4, article h5, article h6 {
+  font-size: 12pt;
+  margin: 30px 0 15px;
+}
+
+article time {
+  font-size: 10pt;
+}
+
+article p, article pre, article ul, article blockquote {
+  margin-bottom: 15px;
+}
+
+article ul, article pre, article blockquote {
+  margin-left: 30px
+}
+
+aside {
+  float: right;
+  width: 250px;
+}
+
+aside section {
+  margin: 20px 0;
+}
+
+aside section h1 {
+  margin-bottom: 10px;
+}
+
+aside ul {
+  margin-left: 10px;
+}
+
+aside .widget {
+  margin: 20px 0;
+}
+
+img {
+  border: 0;
+}
+
+label {
+  font-size: 10pt;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+input {
+  padding: 3px 1px 3px 3px;
+}
+
+textarea, button {
+  padding: 3px;
+}
+
+button {
+  -webkit-appearance: push-button;
+}
+
+#main input, #main textarea {
+  width: 530px;
+}
+
+#main .admin h1 {
+  font-size: 14pt;
+  margin-bottom: 15px;
+}
+
+#main .admin h2 {
+  margin-top: 20px;
+}
+
+#post p {
+  margin: 0 0 15px 0;
+}
+
+#message {
+  margin: 20px 0;
+}
+
+a.edit {
+  margin-left: 10px;
+  font-size: 10pt;
+}
+
+footer {
+  float: left;
+  width: 800px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Personal Customamization by Richardson Dackam */
+
+#blogheader{
+
+}
+#blogname{
+  background: url("http://subtlepatterns.com/patterns/pool_table.png");
+  margin-top: 10px;
+  padding: 30px 0 10px 0px;
+  border-top: black 5px solid;
+
+}
+
+#blogname a{
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  font-size: 1.6em;
+  padding-bottom: 40px;
+}
+
+#blogtitle{
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: #D6D6D6 3px solid;
+  font-size: 1.3em;
+}
+#postwrap{
+  background: white;
+  border: black 1px solid;
+  padding: 10px;
+}
+#posttitle{
+  background: #BCBCBC;
+  padding: 4px;
+  margin: 4px;  
+  font-size: 1.1em;
+}
+#posttitle a{
+  text-decoration: none;
+  color: #272822;
+}
+
+#demo-container{padding:25px 15px 0 15px; background:#ba2d2d; margin-top: 10px;}
+ul#simple-menu{list-style-type:none;width:100%;position:relative;height:27px;font-family:"Trebuchet MS",Arial,sans-serif;font-size:13px;font-weight:bold;margin:0;padding:11px 0 0 0;}
+ul#simple-menu li{display:block;float:left;margin:0 0 0 4px;height:27px;}
+ul#simple-menu li.left{margin:0;}
+ul#simple-menu li a{display:block;float:left;color:#fff;background:#24613E;line-height:27px;text-decoration:none;padding:0 17px 0 18px;height:27px;}
+ul#simple-menu li a.right{padding-right:19px;}
+ul#simple-menu li a:hover{background:#2E4560;}
+ul#simple-menu li a.current{color:#2E4560;background:#fff;}
+ul#simple-menu li a.current:hover{color:#2E4560;background:#fff;}
