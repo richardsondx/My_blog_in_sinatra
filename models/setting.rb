@@ -1,17 +1,18 @@
 class Setting < Sequel::Model
   
-  set_schema do
-    primary_key :id
-    varchar :name
-    varchar :title
-    varchar :code
-    varchar :feed
-    varchar :footer
-    varchar :tracker
+  unless table_exists? 
+    DB.create_table :settings do
+      primary_key :id
+      String :name
+      String :title
+      String :code
+      String :feed
+      String :footer
+      String :tracker
+    end
   end
 
-  unless table_exists?
-    create_table
+  unless self.count > 0
     create(
       :name => 'Railsstep',
       :title => "It's a small step for a man, a big step for hummanity",
@@ -21,7 +22,6 @@ class Setting < Sequel::Model
     update(:code => "matrix1989")
   end
   
-  sync
   
   def self.from_database
     filter.first
