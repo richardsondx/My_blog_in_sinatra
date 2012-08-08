@@ -10,11 +10,11 @@ Dir['plugins/*.rb'].each { |plugin| require_relative plugin }
 
 # Database connection.
 
-#in Development
+# #in Development
 # DB = Sequel.connect 'sqlite://wind.db'
 
 # # in Production
- DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost/wind.db')
+ DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost/wind')
 
 # Sequel schema plugin.
 Sequel::Model.plugin :schema

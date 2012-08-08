@@ -1,3 +1,5 @@
+require 'pry'
+
 before do
   @widgets = Widget.filter.order(:order)
 end
@@ -56,7 +58,12 @@ end
 
 post '/post' do
   if_logged do
-	post = Post[params[:id]] || Post.new
+
+  	if params[:id]=="" then
+		post = Post.new
+	else
+		post = Post[params[:id]]
+	end
 	post.title = params[:title]
 	post.text = params[:text]
 	unless post.id
@@ -96,7 +103,12 @@ end
 
 post '/widget' do
   if_logged do
-	widget = Widget[params[:id]] || Widget.new
+  	if params[:id]=="" then
+		widget = Widget.new
+	else
+		widget = Widget[params[:id]]
+	end
+	
 	widget.title = params[:title]
 	widget.content = params[:content]
 	widget.order = params[:order]

@@ -1,18 +1,23 @@
 class Post < Sequel::Model
   
-
-  Sequel::Model.plugin(:schema)  
-
-  set_schema do
-    set_primary_key :id
-    String :title
-    String :text
-    datetime :date
-    String :link
+  #set_schema do
+  #   primary_key :id
+  #   String :title
+  #   String :text
+  #   datetime :date
+  #   String :link
+  # end
+  unless table_exists? 
+    DB.create_table :posts do
+      primary_key :id
+      String :title
+      String :text
+      Datetime :date
+      String :link
+    end
   end
-  
-  unless table_exists?
-    create_table
+
+  unless self.count > 0
     create(
       :title => 'Welcome!',
       :text => File.open('README.textile', 'r') { |file| file.read },
@@ -20,8 +25,6 @@ class Post < Sequel::Model
       :link => 'welcome'
     )
   end
-  
-  sync
   
   def self.ordered(page = 1)
     filter.order(:date.desc).paginate(page.to_i, PAGE_SIZE)
