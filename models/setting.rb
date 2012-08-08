@@ -3,12 +3,12 @@ class Setting < Sequel::Model
   unless table_exists? 
     DB.create_table :settings do
       primary_key :id
-      String :name
-      String :title
-      String :code
-      String :feed
-      String :footer
-      String :tracker
+      text :name
+      text :title
+      text :code
+      text :feed
+      text :footer
+      text :tracker
     end
   end
 

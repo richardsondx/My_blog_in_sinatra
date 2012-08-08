@@ -11,8 +11,8 @@ class Widget < Sequel::Model
   unless table_exists? 
     DB.create_table :widgets do
       primary_key :id
-      String :title
-      String :content
+      text :title
+      text :content
       integer :order
       boolean :admin
     end
